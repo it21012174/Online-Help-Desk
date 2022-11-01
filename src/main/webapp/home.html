@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="css/bootstrap.css"></link>
+<style>
+  #frm{
+     width:500px;
+     margin:auto;
+     margin-top:100px;
+  }
+  marquee{
+     margin-top:10px;
+  }
+</style>
+</head>
+<body class="container-fluid">
+    <marquee><h2 class="text-primary">SLIIT Support Desk</h2></marquee>
+	<form action="register" method="post" class="form card" id="frm">
+		<h2 class="bg-primary text-white card-header">Add Ticket</h2>
+		<table class="table table-hover">
+		<tr>
+		 <td>Student ID</td>
+		 <td><input type="text" name="stdid" required></td>
+		</tr>
+		<tr>
+		 <td>Student Name</td>
+		 <td><input type="text" name="name" required></td>
+		</tr>
+		<tr>
+		 <td>Module</td>
+		 <td><input type="text" name="module" required></td>
+		</tr>
+		<tr>
+		 <td>Semester</td>
+		 <td><select name="sem">
+		    <option value="Y1S1">Y1S1</option>
+		    <option value="Y1S2">Y1S2</option>
+		    <option value="Y2S1">Y2S1</option>
+		    <option value="Y2S2">Y2S2</option>
+		    <option value="Y3S1">Y3S1</option>
+		    <option value="Y3S2">Y3S2</option>
+		    <option value="Y4S1">Y4S1</option>
+		    <option value="Y4S2">Y4S2</option>
+		 </select></td>
+		</tr>
+		
+		<tr>
+		 <td>Comment</td>
+		 <td><input type="text" name="comment" required></td>
+		</tr>
+		
+		<tr>
+		 <td>Exam Date</td>
+		 <td><input type="date" name="date" required></td>
+		</tr>
+		
+		<tr class="card-footer">
+		<td><button type="submit" class="btn btn-outline-success">Submit Ticket</button></td>
+		<td><button type="reset" class="btn btn-outline-danger">Calean</button></td>
+		</tr>
+		</table>
+		<button class="btn btn-outline-success d-block"><a href="showdata">Manage Ticket</a></button>
+	</form>
+</body>
+</html>
